@@ -10,12 +10,15 @@ const Main: FunctionComponent = () => {
   }, [navigate]);
 
   const onRectangleClick = useCallback(() => {
-    console.log('Sign Up clicked!');
-  }, []);
+    navigate('/signup'); // Navigate to the login page
+  }, [navigate]);
 
   return (
     <div className={styles.iphone161}>
-		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <div className={styles.iphone161Child} />
       <div className={styles.welcomeToTwinninContainer}>
         <span className={styles.welcomeToTwinninContainer1}>

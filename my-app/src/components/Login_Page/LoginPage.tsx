@@ -8,6 +8,9 @@ const LoginPage:FunctionComponent = () => {
 	  const onLoginClick = useCallback(() => {
 		navigate('/login'); // Navigate to the login page
 	  }, [navigate]);
+	  const onBack = useCallback(() => {
+		navigate('/'); // Navigate to home page
+	  }, [navigate]);
   	
   	return (
     		<div className={styles.loginPage}>
@@ -16,7 +19,7 @@ const LoginPage:FunctionComponent = () => {
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-      			<img className={styles.loginPageChild} alt="" src="Rectangle_6.svg" />
+      			<img className={styles.loginPageChild} alt="" src="Rectangle_6.svg"/>
       			<div className={styles.statusBar}>
         				<div className={styles.rightSide}>
           					<img className={styles.batteryIcon} alt="" src="Battery.svg" />
@@ -34,7 +37,7 @@ const LoginPage:FunctionComponent = () => {
                 								<div className={styles.groupChild} />
                 								<div className={styles.emailParent}>
                   									<div className={styles.email}>Email</div>
-                  									<img className={styles.icon} alt="" src="6.svg" />
+                  									<img className={styles.icon} alt="" src="6.svg"/>
                 								</div>
               							</div>
               							<div className={styles.rectangleGroup}>
@@ -64,9 +67,9 @@ const LoginPage:FunctionComponent = () => {
           					</div>
         				</div>
       			</div>
-      			<div className={styles.loginParent} onClick={onLoginClick}>
+      			<div className={styles.loginParent}>
         				<div className={styles.login1}>Login</div>
-        				<img className={styles.icon2} alt="" src="46.svg" />
+        				<img className={styles.icon2} alt="" src="46.svg" onClick={onBack}/>
       			</div>
       			<div className={styles.welcomeBack}>Welcome Back!</div>
       			<img className={styles.btnsigninwithgoogleIcon} alt="" src="btnSigninwithGoogle.svg" />
